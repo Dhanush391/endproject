@@ -1,0 +1,104 @@
+/* ===== Global Styles ===== */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #eef2f7, #dfe9f3);
+  color: #333;
+}
+
+/* ===== Navigation Bar ===== */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #141e30, #243b55);
+  color: white;
+  padding: 14px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.nav a {
+  color: white;
+  margin-left: 18px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav a:hover {
+  color: #00d4ff;
+  transform: translateY(-2px);
+}
+
+/* ===== Cards ===== */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  margin: 15px 0;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ===== Form Styling ===== */
+.form {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.form input,
+.form select {
+  margin: 10px 8px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.25s;
+  font-size: 14px;
+}
+
+.form input:focus,
+.form select:focus {
+  border-color: #4facfe;
+  box-shadow: 0 0 6px rgba(79,172,254,0.4);
+}
+
+/* ===== Button Style (Extra Enhancement) ===== */
+button {
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form input,
+  .form select {
+    width: 100%;
+    margin: 8px 0;
+  }
+}
