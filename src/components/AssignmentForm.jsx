@@ -37,7 +37,7 @@ export default function AssignmentForm() {
         value={member}
         onChange={(e) => setMember(e.target.value)}
       >
-        <option value="">Select Member</option>
+        <option value="">Select Team</option>
         {teamMembers.map(m => (
           <option key={m.id}>{m.name}</option>
         ))}

@@ -16,7 +16,11 @@ function TaskCard({ task }) {
           Mark Complete
         </button>
       )}
+      <div className={`priority ${task.priority}`}>
+  {task.priority}
+</div>
     </div>
+    
   );
 }
 
